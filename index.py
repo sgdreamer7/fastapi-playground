@@ -79,7 +79,7 @@ class Item(BaseModel):
 
 @app.get("/items/", response_model=Item)
 async def read_items():
-    return [{"name": "Foo"}]
+    return {"name": "Foo", "price": 1.99}
 
 
 @app.get("/users/{username}")
