@@ -1,2 +1,24 @@
 [tool.pylint.'MESSAGES CONTROL']
 extension-pkg-whitelist = "pydantic"
+
+[tool.poetry]
+name = "fastapi-playgroud"
+version = "0.1.0"
+description = ""
+authors = ["Vladimir Scherbina <vns.scherbina@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.17.6"
+fastapi = "^0.75.0"
+pydantic = "^1.9.0"
+asyncio = "^3.4.3"
+tartiflette = "^1.4.1"
+tartiflette-asgi = "^0.11.0"
+websockets = "^10.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
